@@ -3,7 +3,7 @@ import Box from './box'
 
 const Card = styled(Box)`
     // margin: 0 auto;
-    width: 60%;
+    width: 90%;
 `
 
 export default Card;

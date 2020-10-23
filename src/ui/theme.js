@@ -4,11 +4,14 @@ const colors = {
     blaker: "#000000",
     grey: "#cccccc",
     greyOne: "#989AA7",
+    greyTwo: "#DCE3EB",
     lytBloo: "#F3F7FA",
     lytBloo2: "#E5F1FF",
     whyt: "#ffffff",
     bloo: "#126AFF",
-    perpl: "#7D57FB"
+    perpl: "#7D57FB",
+    yellah: "#F1D45C",
+    veges: "#86E2F1",
 }
 
 const sizing = {

@@ -2,7 +2,7 @@ import React from 'react'
 import profile from './profile.png'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faChevronDown, faCalendar, faThLarge, faCheckSquare, faTint, faCommentAlt, faQuestionCircle, faStethoscope, faUser, faCross } from '@fortawesome/free-solid-svg-icons'
+import { faChevronDown, faCalendar, faThLarge, faCheckSquare, faTint, faCommentAlt, faQuestionCircle, faStethoscope, faUser, faCross, faQuestion } from '@fortawesome/free-solid-svg-icons'
 
 import Flex from '../atoms/flex'
 import Box from '../atoms/box'
@@ -31,7 +31,7 @@ const SideBar = () => {
             <Box>
                 <ul>
                     <li style={listStyling}><Link width="100%"><Label mr="16px"><FontAwesomeIcon icon={faThLarge} size="xs" /></Label>Home </Link></li>
-                    <li style={listStyling}><Link ><Label mr="16px"><FontAwesomeIcon icon={faTint} size="xs" /></Label>My Health </Link></li>
+                    <li style={listStyling}><Link ><Label mr="16px"><FontAwesomeIcon icon={faTint} size="xs" /></Label>My Scores </Link></li>
                     <li style={listStyling}><Link ><Label mr="16px"><FontAwesomeIcon icon={faCheckSquare} size="xs" /></Label>Self Evaluation </Link></li>
                     <li style={listStyling}><Link ><Label mr="16px"><FontAwesomeIcon icon={faCalendar} size="xs" /></Label>Calendar </Link></li>
                     <li style={listStyling}><Link ><Label mr="16px"><FontAwesomeIcon icon={faCommentAlt} size="xs" /></Label>Messaging </Link></li>
@@ -40,15 +40,15 @@ const SideBar = () => {
 
             <Box>
                 <ul><Paragraph fontSize='12px' color="greyOne">Community</Paragraph>
-                    <li style={listStyling}><Link ><Label mr="16px"><FontAwesomeIcon icon={faStethoscope} size="xs" /></Label>Doctor's Advice </Link></li>
-                    <li style={listStyling}><Link ><Label mr="16px"><FontAwesomeIcon icon={faUser} size="xs" /></Label>Ask Doctor </Link></li>
+                    <li style={listStyling}><Link ><Label mr="16px"><FontAwesomeIcon icon={faQuestion} size="xs" /></Label>Counsellor's Advice </Link></li>
+                    <li style={listStyling}><Link ><Label mr="16px"><FontAwesomeIcon icon={faUser} size="xs" /></Label>Profile </Link></li>
                 </ ul>
             </Box>
 
             <Box marginX="40px" position="absolute" bottom="36px" width="80%">
                 <Flex justifyContent="space-between">
                     <Box color="perpl">
-                        <Label mr="16px"><FontAwesomeIcon icon={faCross} size="xs" /></Label> hospitail
+                        <Label mr="16px"><FontAwesomeIcon icon={faCross} size="xs" /></Label> Learna
                     </Box>
                     <Label mr="16px" color="greyOne"><FontAwesomeIcon icon={faQuestionCircle} size="md" /></Label>
                 </Flex>
