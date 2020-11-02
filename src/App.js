@@ -21,6 +21,7 @@ import Footer from './ui/molecules/footer'
 import SideBar from './ui/molecules/sidebar'
 
 import mapview from './map-view.jpg'
+import Checkbox from './ui/atoms/checkbox';
 
 const overflowStyling = {
   overflowWrap: "break-word",
@@ -43,22 +44,22 @@ const progressBar = {
 }
 
 // hide default checkbox
-const oldCheckbox = {
-  position: "absolute",
-  opacity: "0",
-  cursor: "pointer",
-  height: "0",
-  width: "0",
-}
+// const oldCheckbox = {
+//   position: "absolute",
+//   opacity: "0",
+//   cursor: "pointer",
+//   height: "0",
+//   width: "0",
+// }
 
-const newCheckbox = {
-  position: "absolute",
-  top: "0",
-  left: "0",
-  height: "25px",
-  width: "25px",
-  backgroundColor: "#eee"
-}
+// const newCheckbox = {
+//   position: "absolute",
+//   top: "0",
+//   left: "0",
+//   height: "25px",
+//   width: "25px",
+//   backgroundColor: "#eee"
+// }
 
 function App() {
   return (
@@ -204,14 +205,24 @@ function App() {
               <Card>
                 <Heading fontSize="1em" fontWeight="bold" color="blak">Extra Credit</Heading>
                 <Flex mb="16px" alignItems="baseline" position="relative">
-                  <Flex justifyContent="center" alignItems="center" bg="veges" padding="8px" borderRadius="8px" color="blak" >
-                    {/* <Flex justifyContent="center" alignItems="center" padding="2px 3.5px" borderRadius="8px" fontWeight="bold">
-                      <FontAwesomeIcon icon={faAsterisk} size="xs" />
-                    </Flex> */}
-                    <input type="checkbox" checked="checked" style={oldCheckbox} />
-                    <span style={newCheckbox}></span>
+                  <Flex justifyContent="center" alignItems="center" >
+                    <Checkbox />
+                    <Box ml="8px" color="blak" style={overflowStyling} ><Label fontWeight="bold">Library Volunteer</Label><Box fontSize="10px" color="greyOne">Librarian's Office</Box></Box>
                   </Flex>
-                  <Box ml="8px" color="blak" style={overflowStyling} ><Label fontWeight="bold">Library Volunteer</Label><Box fontSize="10px" color="greyOne">Librarian's Office</Box></Box>
+                </Flex>
+
+                <Flex mb="16px" alignItems="baseline" position="relative">
+                  <Flex justifyContent="center" alignItems="center" >
+                    <Checkbox />
+                    <Box ml="8px" color="blak" style={overflowStyling} ><Label fontWeight="bold">Teacher's Assistant</Label><Box fontSize="10px" color="greyOne">Faculty of Science</Box></Box>
+                  </Flex>
+                </Flex>
+
+                <Flex mb="16px" alignItems="baseline" position="relative">
+                  <Flex justifyContent="center" alignItems="center" >
+                    <Checkbox />
+                    <Box ml="8px" color="blak" style={overflowStyling} ><Label fontWeight="bold">Highschool Outreach</Label><Box fontSize="10px" color="greyOne">Admissions Office</Box></Box>
+                  </Flex>
                 </Flex>
                 <Button >All Credits <Label pl="8px"><FontAwesomeIcon icon={faChevronRight} size="xs" /></Label></Button>
               </Card>
@@ -223,7 +234,7 @@ function App() {
 
       </Box>
       {/* </Container> */}
-      <Footer />
+      {/* <Footer /> */}
     </ThemeProvider >
   );
 }
